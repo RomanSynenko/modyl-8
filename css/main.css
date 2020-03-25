@@ -31,11 +31,10 @@ html{
 .navigation {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
     margin: 0 auto 36px;
     width: 178px;
 }
-.site__logo {
+.site-logo {
     margin-top: 132px;
     font-size: 20px;
     line-height: 24px;
@@ -45,12 +44,12 @@ html{
     text-decoration: none;
     display: block;
 }
-.wrapper {
+.wrapper-header {
     display: flex;
     justify-content: space-between;
     width: 140px;
 }
-.site__login {
+.site-login {
     font-size: 14px;
     line-height: 17px;
     font-weight: 700;
@@ -58,7 +57,7 @@ html{
     text-decoration: none;
     text-align: center;
 }
-.site__login::before {
+.site-login::before {
     content: '';
     border: 2px solid #ffffff;
     border-radius: 50px;
@@ -69,27 +68,24 @@ html{
     opacity: 0;
     transition: opacity .2s linear;
 }
-.site__login:first-child::before {
+.site-login:first-child::before {
     transform: translate(-26%, -27%);
 }
-
-.site__login:last-child::before {
+.site-login:last-child::before {
     transform: translate(-22%, -27%);
 }
-
-.site__login:hover::before {
+.site-login:hover::before {
     opacity: 1;
 }
-.promo__header {
-    padding: 0 20px;
+.promo-header {
+    padding: 0 10px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-
 }
-.promo__description {
+.promo-description {
     margin-top: 24px;
     line-height: 22px;
     font-weight: 400;
@@ -97,9 +93,9 @@ html{
     font-family: 'Roboto', sans-serif;
     opacity: 0.6;
     text-align: center;
-    padding: 0 60px;
+    padding: 0 70px;
 }
-.find__button {
+.find-button {
     border: none;
     color: #ffffff;
     background-color: #ff4e50;
@@ -116,6 +112,11 @@ html{
     border-radius: 20px;
     margin-top: 20px;
 }
+.find-button:hover {
+    background-color: #ffffff;
+    color: #ff4e50;
+}
+/*main*/
 .acticle-page {
     margin-top: 74px;
     font-size: 22px;
@@ -124,16 +125,18 @@ html{
     text-align: center;
 }
 .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
-    width: 220px;
     margin-top: 20px;
 }
-.partner__name {
+.partner-name {
     line-height: 17px;
     font-weight: bold;
     margin-top: 20px;
 }
-.partner__occupation {
+.partner-occupation {
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     line-height: 17px;
@@ -147,6 +150,7 @@ html{
     border-radius: 50%;
 }
 .card-item {
+    width: 200px;
     text-align: center;
     margin-bottom: 26px;
 }
@@ -241,4 +245,65 @@ html{
 .load:focus {
     background: #ff4e50;
     color: #fff;
+}
+@media (orientation: landscape) {
+    .conteiner {
+        width: 490px;
+    }
+    .site-logo {
+        margin-top: 30px;
+    }
+}
+@media (min-width: 700px) and (max-width:1399px){
+    .conteiner {
+        width: 492px;
+    }
+    .navigation {
+        margin-top: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 660px;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    .site-logo {
+        margin-top: 0px;
+    }
+    .text-banner {
+        width: 540px;
+        margin: 0 auto;
+    }
+    .wrapper {
+        width: 130px;
+    }
+    .promo-header {
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 46px;
+    }
+    .promo-description {
+        margin-bottom: 38px;
+    }
+    .find-button {
+        width: 226px;
+    }
+    .acticle-page{
+        margin-bottom: 30px;
+    }
+    .acticle-page {
+        padding-top: 70px;
+    }
+    .partner-list {
+        justify-content: space-between;
+    }
+    .card-item {
+        margin-bottom: 58px;
+    }
+    .card-item:nth-last-of-type(-n+2) {
+        margin-bottom: 0;
+    }
+    .load {
+        margin-top: 40px;
+        width: 198px;
+    }
 }
