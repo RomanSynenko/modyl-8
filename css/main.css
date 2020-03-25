@@ -129,24 +129,93 @@ html{
     margin-top: 20px;
 }
 .partner__name {
-    text-align: center;
     line-height: 17px;
     font-weight: bold;
     margin-top: 20px;
 }
 .partner__occupation {
     margin-top: 20px;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
     line-height: 17px;
     font-weight: 300;
     color: #666666;
 }
+.card-content {
+    position: relative;
+}
+.img-partner {
+    border-radius: 50%;
+}
 .card-item {
+    text-align: center;
     margin-bottom: 26px;
 }
 .card-item:last-child {
     margin-bottom: 0;
+}
+.tv-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #ff4e50;
+    background-image: url('../image/icon/tv-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: block;
+    bottom: 0;
+    right: 40px;
+}
+.cap-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #ffa507;
+    background-image: url('../image/icon/cap-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: block;
+    bottom: 0;
+    right: 40px;
+}
+.flask-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #1cd7ad;
+    background-image: url('../image/icon/flask-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: block;
+    bottom: 0;
+    right: 40px;
+}
+.airplane-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #4e73db;
+    background-image: url('../image/icon/airplane-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: block;
+    bottom: 0;
+    right: 40px;
 }
 /*footer*/
 .load {
