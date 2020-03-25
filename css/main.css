@@ -1,0 +1,125 @@
+html{
+    box-sizing: border-box;
+}
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.conteiner {
+    width: 320px;
+    margin: 0 auto;
+}
+.menu-header {
+    background: url(../image/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 32px; 
+    color: #ffffff;
+}
+.navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 auto 36px;
+    width: 178px;
+}
+.site__logo {
+    margin-top: 132px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+.site__login {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.site__login::before {
+    content: '';
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    width: 94px;
+    height: 40px;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+.site__login:first-child::before {
+    transform: translate(-26%, -27%);
+}
+
+.site__login:last-child::before {
+    transform: translate(-22%, -27%);
+}
+
+.site__login:hover::before {
+    opacity: 1;
+}
+.promo__header {
+    padding: 0 20px;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+
+}
+.promo__description {
+    margin-top: 24px;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+    text-align: center;
+    padding: 0 60px;
+}
+.find__button {
+    border: none;
+    color: #ffffff;
+    background-color: #ff4e50;
+    cursor: pointer;
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    line-height: 17px;
+    font-weight: 700;
+    transition: all .2s linear;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.acticle-page {
+    margin-top: 74px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+}
