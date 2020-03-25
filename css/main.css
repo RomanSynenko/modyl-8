@@ -123,8 +123,49 @@ html{
     font-weight: bold;
     text-align: center;
 }
-.find__button:hover,
-.find__button:focus {
-    background: #ffffff;
+.partner-list {
+    margin: 0 auto;
+    width: 220px;
+    margin-top: 20px;
+}
+.card-content {}
+.partner__name {
+    text-align: center;
+    line-height: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.partner__occupation {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 17px;
+    font-weight: 300;
+    color: #666666;
+}
+.card-item {
+    margin-bottom: 26px;
+}
+.card-item:last-child {
+    margin-bottom: 0;
+}
+/*footer*/
+.load {
+    border: none;
     color: #ff4e50;
+    border: 2px solid #ff4e50;
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    line-height: 17px;
+    font-weight: 700;
+    transition: all .2s linear;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
