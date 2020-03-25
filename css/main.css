@@ -123,3 +123,8 @@ html{
     font-weight: bold;
     text-align: center;
 }
+.find__button:hover,
+.find__button:focus {
+    background: #ffffff;
+    color: #ff4e50;
+}
