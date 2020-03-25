@@ -237,3 +237,8 @@ html{
     margin-top: 30px;
     margin-bottom: 60px;
 }
+.load:hover,
+.load:focus {
+    background: #ff4e50;
+    color: #fff;
+}
