@@ -15,6 +15,7 @@ html{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
+/*header*/
 .conteiner {
     width: 320px;
     margin: 0 auto;
@@ -246,12 +247,27 @@ html{
     background: #ff4e50;
     color: #fff;
 }
+/*media*/
 @media (orientation: landscape) {
     .conteiner {
-        width: 490px;
+        width: 492px;
+    }
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 480px;
+        align-items: center;
+        margin-bottom: 100px;
     }
     .site-logo {
-        margin-top: 30px;
+        margin-top: 0px;
+    }
+    .menu-header {
+        padding-top: 20px;
+    }
+    .text-banner {
+        width: 350px;
+        margin: 0 auto;
     }
 }
 @media (min-width: 700px) and (max-width:1399px){
@@ -305,5 +321,37 @@ html{
     .load {
         margin-top: 40px;
         width: 198px;
+    }
+}
+@media (min-width: 1400px) {
+    .conteiner {
+        width: 940px;
+    }
+    .promo-header {
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 40px;
+    }
+    .text-banner {
+        width: 550px;
+    }
+    .navigation {
+        margin-bottom: 210px;
+    }
+    .find-button {
+        margin-top: 36px;
+    }
+    .menu-header {
+        padding-top: 50px;
+    }
+    .card-item:nth-last-of-type(-n + 4) {
+        margin-bottom: 0;
+    }
+    .partner-list {
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    .load {
+        margin-top: 40px;
     }
 }
