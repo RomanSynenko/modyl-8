@@ -252,9 +252,6 @@ html{
     .conteiner {
         width: 492px;
     }
-    .menu-header {
-        height: 180vh;
-    }
     .navigation {
         flex-direction: row;
         justify-content: space-between;
@@ -273,7 +270,7 @@ html{
         margin: 0 auto;
     }
 }
-@media (min-width: 700px) and (max-width:1399px){
+@media (min-width: 768px) and (max-width:1399px){
     .conteiner {
         width: 492px;
     }
