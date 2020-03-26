@@ -252,6 +252,9 @@ html{
     .conteiner {
         width: 492px;
     }
+    .menu-header {
+        height: 180vh;
+    }
     .navigation {
         flex-direction: row;
         justify-content: space-between;
